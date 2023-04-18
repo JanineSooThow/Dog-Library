@@ -1,8 +1,8 @@
 let APIdata = []; //first array for collection
 let filteredData = [] //second array to filter through the cards 
 
-//fetching API data
-fetch('https://api.thedogapi.com/v1/breeds')
+//fetching API data, wrap fetch in a function and function will take an argument (path parameter pass to url)
+fetch(`http://localhost:3000/dog/breeds/all`)
 .then((response) => response.json())
 .then((json) => {   
     console.log(json)
