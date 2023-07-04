@@ -4,7 +4,7 @@ const axios = require('axios');
 const fetchAPIData = (req, res) => {
 
 
-//from Postman NodeJS Axios
+//from Postman NodeJS Axios-new
     let config = {
         method: 'get',
         maxBodyLength: Infinity,
