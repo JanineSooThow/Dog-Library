@@ -1,4 +1,5 @@
 //axios must be at the top
+require('dotenv').config(); //load environment variables from .env file
 const axios = require('axios');
 
 const fetchAPIData = (req, res) => {
@@ -9,7 +10,9 @@ const fetchAPIData = (req, res) => {
         method: 'get',
         maxBodyLength: Infinity,
         url: 'https://api.thedogapi.com/v1/breeds',
-        headers: { }
+        headers: { 
+            'x-api-key': process.env['X-API-Key'], 
+        }
     };
 
     axios.request(config)
