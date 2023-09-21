@@ -8,7 +8,7 @@
 # Steps
 
 1. Clone this repo to your computer (git clone "ssh code without quotes")
-2. cd into the directory
+2. cd into the directory (in this case cd into the 'server' folder and put in the command "npm start")
 
 3. Do some research, have a look at the free APIs and come up with an idea for a project that will test your knowledge from modules 1 - 4
 4. List the requirements below

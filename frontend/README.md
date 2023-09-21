@@ -8,7 +8,7 @@
 # Steps
 
 1. Clone this repo to your computer (git clone "ssh code without quotes")
-2. cd into the directory
+2. cd into the directories of frontend and server. For server - 'npm start' and for frontend, press the "Go live" button at the bottom right side of VS code. The project should load. 
 
 3. Do some research, have a look at the free APIs and come up with an idea for a project that will test your knowledge from modules 1 - 4
 4. List the requirements below
@@ -48,7 +48,7 @@ The Dog Breed Library allows users to browse/search and filter through different
 ## ▪ Where does its data come from (external/internal APIs)?
 
 ```
-The data comes from an external API 'https://api.thedogapi.com/v1/breeds'. This API was free and public which allowed me to retrieve this data and display it to the user.
+The data comes from an external API 'https://api.thedogapi.com/v1/breeds'. This API was free and public which allowed me to retrieve this data and display it to the user
 ```
 </br>
 
