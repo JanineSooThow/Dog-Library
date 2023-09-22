@@ -1,4 +1,4 @@
-const apiEndpoint = 'https://your-netlify-site.netlify.app/.netlify/functions/proxy';
+
 let APIdata = []; //first array for collection
 let filteredData = [] //second array to filter through the cards 
 
