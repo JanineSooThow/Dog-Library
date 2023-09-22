@@ -1,8 +1,14 @@
+const apiEndpoint = 'https://your-netlify-site.netlify.app/.netlify/functions/proxy';
 let APIdata = []; //first array for collection
 let filteredData = [] //second array to filter through the cards 
 
-//fetching API data, wrap fetch in a function and function will take an argument (path parameter pass to url)
-fetch(`http://localhost:3000/dog/breeds/all`)
+const apiKey = 'live_q5aqS3pxf56Qu1MzbEbI7cCJ24RwL1G947t6xhFBKkpXR2YE2O1oMN5N9SVcma1I';
+
+fetch('https://api.thedogapi.com/v1/breeds', {
+  headers: {
+    'x-api-key': apiKey,
+  },
+})
 .then((response) => response.json())
 .then((json) => {   
     console.log(json)
@@ -10,7 +16,6 @@ fetch(`http://localhost:3000/dog/breeds/all`)
     filteredData = json
     showCards()
 })
-
 /*The following code provides information on the 'breed_group' only in the terminal
 fetch('https://api.thedogapi.com/v1/breeds')
   .then((response) => response.json())
